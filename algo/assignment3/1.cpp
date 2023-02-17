@@ -65,7 +65,7 @@ void shell(ll arr[], ll n)
     ll i = n / 2;
     while (i)
     {
-        for (ll j = i + 1; j < n; j++)
+        for (ll j = i; j < n; j++)
         {
             ll key = arr[j];
             ll k = j - i;
