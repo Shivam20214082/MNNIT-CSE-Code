@@ -1,0 +1,1 @@
+String a[]=new String[no_of_lab+no_of_subject];
