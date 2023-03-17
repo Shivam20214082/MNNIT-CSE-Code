@@ -4,10 +4,10 @@
 #include <fcntl.h>
 #include <semaphore.h>
 
-#define BUFFER_SIZE 5
-#define MAX_ITEMS 20
+#define BS 5
+#define MAX 20
 
-int buffer[BUFFER_SIZE];
+int buffer[BS];
 int in = 0;
 int out = 0;
 int count = 0;
@@ -16,12 +16,12 @@ sem_t *empty, *full, *mutex;
 
 void producer() {
     int item;
-    for (int i = 0; i < MAX_ITEMS; i++) {
+    for (int i = 0; i < MAX; i++) {
         item = rand() % 100; // generate a random number between 0 and 99
         sem_wait(empty); // wait for an empty slot in the buffer
         sem_wait(mutex); // acquire the mutex to modify the buffer
         buffer[in] = item; // add the item to the buffer
-        in = (in + 1) % BUFFER_SIZE; // update the in pointer
+        in = (in + 1) % BS; // update the in pointer
         count++; // increase the count of items in the buffer
         printf("Producer: added item %d to the buffer\n", item);
         sem_post(mutex); // release the mutex
@@ -32,11 +32,11 @@ void producer() {
 
 void consumer() {
     int item;
-    for (int i = 0; i < MAX_ITEMS; i++) {
+    for (int i = 0; i < MAX; i++) {
         sem_wait(full); // wait for a non-empty buffer
         sem_wait(mutex); // acquire the mutex to modify the buffer
         item = buffer[out]; // get an item from the buffer
-        out = (out + 1) % BUFFER_SIZE; // update the out pointer
+        out = (out + 1) % BS; // update the out pointer
         count--; // decrease the count of items in the buffer
         printf("Consumer: removed item %d from the buffer\n", item);
         sem_post(mutex); // release the mutex
@@ -46,7 +46,7 @@ void consumer() {
 }
 
 int main() {
-    empty = sem_open("/empty", O_CREAT | O_EXCL, 0666, BUFFER_SIZE);
+    empty = sem_open("/empty", O_CREAT | O_EXCL, 0666, BS);
     full = sem_open("/full", O_CREAT | O_EXCL, 0666, 0);
     mutex = sem_open("/mutex", O_CREAT | O_EXCL, 0666, 1);
 
