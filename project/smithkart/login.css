@@ -35,8 +35,29 @@ form {
 }  
 
 #register-form{
-    display: block;
+  display: block;
 }
 #login-form{
-    display: none;
+  display: none;
+}
+.form-selector{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 25px;
+  margin-right: 25px;
+}
+#register-btn{
+  border-radius: 10px;
+  background-color: #e51515;
+  margin-right: 25px;
+  width: 20%;
+  padding: 4px;
+}
+#login-btn{
+  border-radius: 10px;
+  background-color: #e51515;
+  margin-right: 25px;
+  width: 20%;
+  padding: 4px;
 }
