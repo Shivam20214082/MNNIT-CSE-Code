@@ -9,7 +9,7 @@ body {
 }
 
 nav{
-  position: fixed; /* Set the navbar to fixed position */
+  /* position: fixed; Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%;
     font-family: 'Ubuntu', sans-serif;
@@ -130,7 +130,7 @@ footer {
   background-color: #3f3e3e;
   text-align: center;
   position: relative;
-  bottom: 0;
+  bottom:0;
   width: 100%;
   margin-top: 10px;
   padding: 20px 0 10px;
