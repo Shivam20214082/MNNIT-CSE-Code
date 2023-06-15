@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApnaKart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="topnav">
+      <li class="brand"><img src="logoo.jpg" alt="">𝒜𝓅𝓃𝒶𝒦𝒜𝓇𝓉</li>
+      <li> <a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search item" onkeyup="search()">
+        <div id="search-results" style="background-color: rgb(191, 235, 237);"></div>
+      </div>
+      <!-- <input type="text" id="search" placeholder="Search item" onkeyup="search()"> -->
+      <button class="w3-btn w3-round-xlarge "style="cursor: pointer;">search</button>
+      <li class="cart"><img src="cart.png"><a href="cart.html">Cart</a></li>
+      <input class="login" onmouseover="" onclick="redirectToNewPage()" type="button" value="Login">
+    </div>
+  </nav>
+
+  
+  
+
+
+  <div class="section top-products">
+    <h2>TOP PRODUCTS</h2>
+    <div class="product-container">
+      <div class="product" id="p1">
+        <img src="images/daal.jpeg"  onclick="window.location.href='daal.html';" style="cursor: pointer;"  alt="Daal">
+        <div class="product-info" >
+          <h3>Daal</h3>
+          <p class="price">₹ 100/kg</p>
+        </div>
+      </div>
+      <div class="product" id="p2">
+        <img src="images/rice.jpeg" onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Product 2">
+        <div class="product-info" >
+          <h3>Rice</h3>
+          <p class="price">₹ 40/kg</p>
+        </div>
+      </div>
+      <div class="product" id="p3">
+        <img src="images/milk.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 3">
+        <div class="product-info" >
+          <h3>Milk</h3>
+          <p class="price">₹ 40/litre</p>
+        </div>
+      </div>
+      <div class="product" id="p4">
+        <img src="images/sugar.jpeg" onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Product 4">
+        <div class="product-info">
+          <h3>Sugar</h3>
+          <p class="price">₹ 40/kg</p>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <button class="left-button">&#8249;</button>
+      <button class="right-button">&#8250;</button>
+    </div>
+    <button class="see-more" onclick="goToNextPage()">See more...</button>
+  </div>
+
+  <div class="section organic-products">
+    <h2>DAILY USE PRODUCTS</h2>
+    <div class="product-container" id="p5"> 
+      <div class="product">
+        <img src="images/oil.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 5">
+        <div class="product-info">
+          <h3>Oil</h3>
+          <p class="price">₹ 100-500/litre</p>
+        </div>
+      </div>
+      <div class="product" id="p6">
+        <img src="images/soap.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 6">
+        <div class="product-info">
+          <h3>Soap</h3>
+          <p class="price">₹ 10-150</p>
+        </div>
+      </div>
+      <div class="product" id="p7">
+        <img src="images/aata.jpeg" onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Product 7">
+        <div class="product-info">
+          <h3>Wheat flour</h3>
+          <p class="price">₹ 30/kg</p>
+        </div>
+      </div>
+      <div class="product" id="p8">
+        <img src="images/jaggery.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 8">
+        <div class="product-info">
+          <h3>Jaggery</h3>
+          <p class="price">₹ 60/kg</p>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <button class="left-button">&#8249;</button>
+      <button class="right-button">&#8250;</button>
+    </div>
+    <button class="see-more" onclick="goToNextPage()">See more...</button>
+  </div>
+  <div class="section organic-products">
+    <h2> DRY FRUITS</h2>
+    <div class="product-container">
+      <div class="product" id="p9">
+        <img src="images/almonds.jpeg" onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Product 5">
+        <div class="product-info">
+          <h3>Almonds</h3>
+          <p class="price">₹ 1000/kg</p>
+        </div>
+      </div>
+
+      <div class="product" id="p10">
+        <img src="images/kaju.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 6">
+        <div class="product-info">
+          <h3>Cheshew</h3>
+          <p class="price">₹ 1000/kg</p>
+        </div>
+      </div>
+      <div class="product" id="p11">
+        <img src="images/resins.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 7">
+        <div class="product-info">
+          <h3>Resins</h3>
+          <p class="price">₹ 300/kg</p>
+        </div>
+      </div>
+      <div class="product" id="p12">
+        <img src="images/coconut.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 8">
+        <div class="product-info">
+          <h3>Coconut</h3>
+          <p class="price">₹ 300/kg</p>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <button class="left-button">&#8249;</button>
+      <button class="right-button">&#8250;</button>
+    </div>
+    <button class="see-more" onclick="goToNextPage()">See more...</button>
+  </div>
+
+  <div class="section organic-products">
+    <h2>DAIRY PRODUCTS</h2>
+    <div class="product-container" id="p5"> 
+      <div class="product">
+        <img src="images/yoghurt.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 5">
+        <div class="product-info">
+          <h3>Yoghurt</h3>
+          <p class="price">₹ 30-200</p>
+        </div>
+      </div>
+      <div class="product" id="p6">
+        <img src="images/milk.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 6">
+        <div class="product-info">
+          <h3>Milk</h3>
+          <p class="price">₹ 45/L</p>
+        </div>
+      </div>
+      <div class="product" id="p7">
+        <img src="images/butter.jpeg" onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Product 7">
+        <div class="product-info">
+          <h3>Butter</h3>
+          <p class="price">₹ 520/kg</p>
+        </div>
+      </div>
+      <div class="product" id="p8">
+        <img src="images/cheese.jpg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 8">
+        <div class="product-info">
+          <h3>Cheese</h3>
+          <p class="price">₹ 340-400/kg</p>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <button class="left-button">&#8249;</button>
+      <button class="right-button">&#8250;</button>
+    </div>
+    <button class="see-more" onclick="goToNextPage()">See more...</button>
+  </div>
+  <div class="section organic-products">
+    <h2>FRESH FRUITS AND VEGETABLES</h2>
+    <div class="product-container">
+      <div class="product" id="p9">
+        <img src="images/apple.jpeg" onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Product 5">
+        <div class="product-info">
+          <h3>Apples</h3>
+          <p class="price">₹ 220/kg</p>
+        </div>
+      </div>
+
+      <div class="product" id="p10">
+        <img src="images/orange.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 6">
+        <div class="product-info">
+          <h3>Oranges</h3>
+          <p class="price">₹ 100/kg</p>
+        </div>
+      </div>
+      <div class="product" id="p11">
+        <img src="images/cucumber.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 7">
+        <div class="product-info">
+          <h3>Cucumbers</h3>
+          <p class="price">₹ 150/kg</p>
+        </div>
+      </div>
+      <div class="product" id="p12">
+        <img src="images/potato.jpg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 8">
+        <div class="product-info">
+          <h3>Potato</h3>
+          <p class="price">₹ 80/kg</p>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <button class="left-button">&#8249;</button>
+      <button class="right-button">&#8250;</button>
+    </div>
+    <button class="see-more" onclick="goToNextPage()">See more...</button>
+  </div>
+
+<h5 style="text-align: center;">Website is under maintenance, more items will be added soon as per the requirements. </h5>
+  <footer>
+    <div class="footer_div">
+      <section claa="footer_link">
+        <!-- Google -->
+        <a href="https://www.google.com/">
+          <img src="icons8-google-48.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+        </a>
+        <!-- Instagram -->
+        <a href="#">
+          <img src="icons8-instagram-48.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+        </a>
+        <!-- Linkedin -->
+        <a href="http://www.linkedin.com/in/shivam-gupta-162075260">
+          <img src="icons8-linkedin-circled.gif" alt="Google" width="3%" height="3%" style="margin: 3px;">
+        </a>
+        <!-- Github -->
+        <a href="https://github.com/Shivam20214082/MNNIT-CSE-Code">
+          <img src="icons8-github-50.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+        </a>
+      </section>
+    </div>
+    <div class="Copyright">© 2023 Copyright:
+      <a class="text-white" href="#">ApnaKart.com</a>
+    </div>
+  </footer>
+  <script src="srcipt.js"></script>
+</body>
+
+</html>

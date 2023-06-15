@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
         perror("opendir");
         return 1;
     }
-
+    
     while ((dp = readdir(dir)) != NULL)
     {
         printf("%s\n", dp->d_name);

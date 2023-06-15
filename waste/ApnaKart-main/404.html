@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website Under Maintenance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            /* background-image: url(images/404.jpeg); */
+            /* opacity: 0.5; */
+        }
+
+        h1 {
+            color: rgb(88, 41, 190);
+            font-size: 36px;
+            margin-top: 50px;
+        }
+
+        p {
+            color: rgb(12 47 220);
+            font-size: 24px;
+            margin-top: 30px;
+        }
+
+        .back {
+            width: 30%;
+            margin-top: 25px;
+            text-align: center;
+            height: 46px;
+            border-radius: 12px;
+            color: white;
+            background-color: rgb(63, 205, 115);
+        }
+    </style>
+
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="topnav">
+          <li class="brand"><img src="logo.png" alt="">𝒜𝓅𝓃𝒶𝒦𝒜𝓇𝓉</li>
+          <li> <a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search item" onkeyup="search()">
+            <div id="search-results" style="background-color: aliceblue;"></div>
+          </div>
+          <!-- <input type="text" id="search" placeholder="Search item" onkeyup="search()"> -->
+          <button class="w3-btn w3-round-xlarge "style="cursor: pointer;">search</button>
+          <li class="cart"><img src="cart.png"><a href="cart.html">Cart</a></li>
+          <input class="login" onmouseover="" onclick="redirectToNewPage()" type="button" value="Login">
+        </div>
+      </nav>
+    <h1>Website Under Maintenance</h1>
+    <p>As our website is under maintenance , we apologize for the inconvenience.</p>
+    <p>Please check back later, as we will be adding more items soon!</p>
+    <button class="back" onclick="goBack()" style="cursor: pointer;">Go Back</button>
+    <footer style="position: absolute;">
+        <div class="footer_div">
+            <section claa="footer_link">
+                <!-- Google -->
+                <a href="https://www.google.com/">
+                    <img src="icons8-google-48.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+                </a>
+                <!-- Instagram -->
+                <a href="#">
+                    <img src="icons8-instagram-48.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+                </a>
+                <!-- Linkedin -->
+                <a href="http://www.linkedin.com/in/shivam-gupta-162075260">
+                    <img src="icons8-linkedin-circled.gif" alt="Google"width="3%" height="3%" style="margin: 3px;">
+                </a>
+                <!-- Github -->
+                <a href="https://github.com/Shivam20214082/MNNIT-CSE-Code">
+                    <img src="icons8-github-50.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+                </a>
+            </section>
+        </div>
+        <div class="Copyright">© 2023 Copyright:
+            <a class="text-white" href="#">ApnaKart.com</a>
+        </div>
+    </footer>
+    <script src="srcipt.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

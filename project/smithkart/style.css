@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
 body {
-  background-color: antiquewhite;
+  background-color: #b1dea0a3;
 }
 
 *{
   margin: 0;
   padding: 0;
 }
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 
 nav{
   /* position: fixed; Set the navbar to fixed position */
@@ -26,7 +38,7 @@ nav div{
     align-items: center;
     list-style-type: none;
     height: 65px;
-    background-color: cyan;
+    background-color: #e7f0f0;;
     color: bisque;
 }
 nav div li{
@@ -51,15 +63,15 @@ a:link {
   
   /* visited link */
 a:visited {
-    color: rgb(188, 146, 91);
+    color: rgb(247, 5, 5);
     text-decoration: none;
 }
   
   /* mouse over link */
-a:hover {
+/* a:hover {
     color: hotpink;
     text-decoration: none;
-}
+} */
   
   /* selected link */
 a:active {
@@ -80,20 +92,22 @@ a:active {
     margin-left: 12px;
     width: 100%;
     font-size: 17px;
+    border-radius: 7px;
 }
 .topnav input[type=button] {
-    background-color: goldenrod;
-    color: chartreuse;
-    cursor: pointer;
-    float: right;
-    width: 15%;
-    padding: 6px;
-    border: 1px;
-    margin-top: 8px;
-    margin-right: 8px;
-    margin-left: 12px;
-    /* width: 60%; */
-    font-size: 17px;
+  background-color: #07db35;
+  color: #ffffff;
+  cursor: pointer;
+  float: right;
+  width: 15%;
+  padding: 6px;
+  border: 1px;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-left: 12px;
+  /* width: 60%; */
+  border-radius: 7px;
+  font-size: 17px;
 }
 .cart img{
     width: 54px;
@@ -209,13 +223,13 @@ body {
 
 
 footer {
-  background-color: #3f3e3e;
+  background-color: #726d6d;
   text-align: center;
   position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
-  margin-top: 10px;
+  margin-top: auto;
   padding: 20px 0 10px;
 }
 .Copyright{

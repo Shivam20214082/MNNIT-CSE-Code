@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <div class="topnav">
+        <li class="brand"><img src="logo.png" alt="">ApnaKart</li>
+        <li> <a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search item" onkeyup="search()">
+          <div id="search-results" style="background-color: aliceblue;"></div>
+        </div>
+        <!-- <input type="text" id="search" placeholder="Search item" onkeyup="search()"> -->
+        <button class="w3-btn w3-round-xlarge "style="cursor: pointer;">search</button>
+        <li class="cart"><img src="cart.png"><a href="cart.html">Cart</a></li>
+        <input class="login" onmouseover="" onclick="redirectToNewPage()" type="button" value="Login">
+      </div>
+    </nav>
+
+    <div class="main" >
+        <div class="left">
+            <img src="images/rice.jpeg" alt="Rice">
+        </div>
+        <div class="right">
+            <h1 style="text-align: center;">Rice</h1>
+        </div>
+    </div>
+
+
+    <script src="srcipt.js"></script>
+</body>
+</html>

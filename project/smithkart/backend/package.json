@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/app.js"
+    "dev": "nodemon src/app.js -e js,hbs"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +14,6 @@
     "hbs": "^4.2.0",
     "mongoose": "^7.0.2"
   },
+  "devDependencies": {},
   "description": ""
 }

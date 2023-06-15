@@ -1,0 +1,43 @@
+
+body{
+    background-color: #7be2e573;
+    /* background-color: grey; */
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+}
+.left{
+    width: 60%;
+    word-wrap: break-word;
+    margin-right: 25px;
+    padding: auto;
+}
+.Right{
+    margin-top: 10px;
+    /*width: 45%*/;
+    /*height: 350px;*/
+     background-color: rgb(175 223 224);
+    border: 2px;
+    border-radius: 5%;
+    padding: 25px;
+    line-height: 24px;
+    margin-right: 25px;
+}
+.input{
+    width: 100px;
+}
+.submit{
+    margin-left: 50px;
+    /* margin-right: 25px; */
+    height: 25px;
+    border-radius: 6px;
+    width: 65%;
+    background-color: #25b8c2fa;
+    border: 4px;
+}
+.submit:hover {
+    background-color: #4CAF50; /* Green */
+    color: rgb(16, 16, 16);
+  }
